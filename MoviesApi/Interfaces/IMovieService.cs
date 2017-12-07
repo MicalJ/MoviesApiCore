@@ -14,7 +14,7 @@ namespace MoviesApi.Interfaces
 
         void AddMovie(Movie movie);
 
-        Movie UpdateMovie(Movie movie);
+        void UpdateMovie(Movie movie);
 
         void Delete(int id);
     }

@@ -11,27 +11,46 @@ namespace MoviesApi.Services
     {
         public List<Movie> GetAll()
         {
-            throw new NotImplementedException();
+             using(MoviesApiDbContext db = new MoviesApiDbContext())
+            {
+                return db.Movies.ToList();
+            } 
         }
 
         public Movie GetById(int id)
         {
-            throw new NotImplementedException();
+            using(MoviesApiDbContext db = new MoviesApiDbContext())
+            {
+                return db.Movies.Where(m => m.Id == id).SingleOrDefault();
+            }
         }
 
         public void AddMovie(Movie movie)
         {
-            throw new NotImplementedException();
+            using (MoviesApiDbContext db = new MoviesApiDbContext())
+            {
+                db.Movies.Add(movie);
+                db.SaveChanges();
+            }
         }
 
-        public Movie UpdateMovie(Movie movie)
+        public void UpdateMovie(Movie movie)
         {
-            throw new NotImplementedException();
+            using (MoviesApiDbContext db = new MoviesApiDbContext())
+            {
+                db.Entry(movie).State = System.Data.Entity.EntityState.Modified;
+                db.SaveChanges();
+            }
         }
 
         public void Delete(int id)
         {
-            throw new NotImplementedException();
+            using (MoviesApiDbContext db = new MoviesApiDbContext())
+            {
+                var movieId = db.Movies.Find(id);
+                db.Movies.Remove(movieId);
+                db.SaveChanges();
+            }
         }
     }
 }
