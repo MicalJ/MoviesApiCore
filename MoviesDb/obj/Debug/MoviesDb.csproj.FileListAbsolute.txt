@@ -1,0 +1,13 @@
+C:\Repos\MoviesApi\MoviesDb\bin\Debug\MoviesDb.dll.config
+C:\Repos\MoviesApi\MoviesDb\bin\Debug\MoviesDb.dll
+C:\Repos\MoviesApi\MoviesDb\bin\Debug\MoviesDb.pdb
+C:\Repos\MoviesApi\MoviesDb\bin\Debug\EntityFramework.dll
+C:\Repos\MoviesApi\MoviesDb\bin\Debug\EntityFramework.SqlServer.dll
+C:\Repos\MoviesApi\MoviesDb\bin\Debug\EntityFramework.xml
+C:\Repos\MoviesApi\MoviesDb\bin\Debug\EntityFramework.SqlServer.xml
+C:\Repos\MoviesApi\MoviesDb\obj\Debug\MoviesDb.csprojResolveAssemblyReference.cache
+C:\Repos\MoviesApi\MoviesDb\obj\Debug\MoviesDb.csproj.CoreCompileInputs.cache
+C:\Repos\MoviesApi\MoviesDb\obj\Debug\MoviesDb.dll
+C:\Repos\MoviesApi\MoviesDb\obj\Debug\MoviesDb.pdb
+C:\Repos\MoviesApi\MoviesDb\obj\Debug\MoviesDb.Migrations.Initial.resources
+C:\Repos\MoviesApi\MoviesDb\obj\Debug\MoviesDb.csproj.GenerateResource.Cache

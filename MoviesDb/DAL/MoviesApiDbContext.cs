@@ -4,7 +4,7 @@ namespace MoviesDb.DAL
 {
     public class MoviesApiDbContext : DbContext
     {
-        public MoviesApiDbContext() : base(@"Data Source=PREDATOR\SQLEXPRESS;Initial Catalog=MoviesApiDb;Integrated Security=True")
+        public MoviesApiDbContext() : base(@"Data Source=PREDATOR\SQLEXPRESS;Initial Catalog=MoviesDb;Integrated Security=True")
         { }
 
         public DbSet<Movie> Movies { get; set; }

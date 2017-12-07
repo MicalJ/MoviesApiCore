@@ -136,3 +136,14 @@ C:\Repos\MoviesApi\MoviesApi\obj\Debug\net471\MoviesApi.AssemblyInfoInputs.cache
 C:\Repos\MoviesApi\MoviesApi\obj\Debug\net471\MoviesApi.AssemblyInfo.cs
 C:\Repos\MoviesApi\MoviesApi\bin\Debug\net471\AutoMapper.dll
 C:\Repos\MoviesApi\MoviesApi\bin\Debug\net471\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Repos\MoviesApi\MoviesApi\bin\Debug\net471\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Repos\MoviesApi\MoviesApi\bin\Debug\net471\Swashbuckle.AspNetCore.dll
+C:\Repos\MoviesApi\MoviesApi\bin\Debug\net471\Swashbuckle.AspNetCore.Swagger.dll
+C:\Repos\MoviesApi\MoviesApi\bin\Debug\net471\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Repos\MoviesApi\MoviesApi\bin\Debug\net471\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Repos\MoviesApi\MoviesApi\bin\Debug\net471\MoviesDb.dll
+C:\Repos\MoviesApi\MoviesApi\bin\Debug\net471\MoviesApi.pdb
+C:\Repos\MoviesApi\MoviesApi\bin\Debug\net471\MoviesDb.pdb
+C:\Repos\MoviesApi\MoviesApi\bin\Debug\net471\MoviesDb.dll.config
+C:\Repos\MoviesApi\MoviesApi\obj\Debug\net471\MoviesApi.exe
+C:\Repos\MoviesApi\MoviesApi\obj\Debug\net471\MoviesApi.pdb

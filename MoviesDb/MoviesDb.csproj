@@ -51,11 +51,21 @@
     <Compile Include="DAL\Movie.cs" />
     <Compile Include="DAL\MoviesApiDbContext.cs" />
     <Compile Include="DAL\Review.cs" />
+    <Compile Include="Migrations\201712071508506_Initial.cs" />
+    <Compile Include="Migrations\201712071508506_Initial.Designer.cs">
+      <DependentUpon>201712071508506_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201712071508506_Initial.resx">
+      <DependentUpon>201712071508506_Initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

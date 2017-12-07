@@ -10,6 +10,9 @@ using AutoMapper;
 using System.Reflection;
 using Swashbuckle.AspNetCore.Swagger;
 using System.IO;
+using MoviesDb.DAL;
+using MoviesApi.Interfaces;
+using MoviesApi.Services;
 
 namespace MoviesApi
 {
@@ -22,6 +25,9 @@ namespace MoviesApi
             services.AddMvc();
 
             services.AddAutoMapper(opt => opt.CreateMissingTypeMaps = true, Assembly.GetEntryAssembly());
+
+            services.AddScoped<IMovieService, MovieService>();
+            services.AddScoped<MoviesApiDbContext>();
 
             services.AddSwaggerGen(sw =>
             {
