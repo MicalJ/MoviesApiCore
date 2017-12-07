@@ -29,14 +29,14 @@ namespace MoviesApi
             services.AddScoped<IMovieService, MovieService>();
             services.AddScoped<MoviesApiDbContext>();
 
-            services.AddSwaggerGen(sw =>
-            {
-                sw.SwaggerDoc("ver.1", new Info { Version = "ver.1", Title = "Movies Api" });
-                sw.CustomSchemaIds(i => i.FullName);
-                var basePath = System.AppContext.BaseDirectory;
-                var xmlPath = Path.Combine(basePath, "MoviesApi.xml");
-                sw.IncludeXmlComments(xmlPath);
-            });
+            //services.AddSwaggerGen(sw =>
+            //{
+            //    sw.SwaggerDoc("ver.1", new Info { Version = "ver.1", Title = "Movies Api" });
+            //    sw.CustomSchemaIds(i => i.FullName);
+            //    var basePath = System.AppContext.BaseDirectory;
+            //    var xmlPath = Path.Combine(basePath, "MoviesApi.xml");
+            //    sw.IncludeXmlComments(xmlPath);
+            //});
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -56,13 +56,13 @@ namespace MoviesApi
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
 
-            app.UseSwagger();
+            //app.UseSwagger();
 
-            app.UseSwaggerUI(sw =>
-            {
-                var swaggerPath = "/swagger/ver.1/swagger.json";
-                sw.SwaggerEndpoint(swaggerPath, "Movies Api Ver.1");
-            });
+            //app.UseSwaggerUI(sw =>
+            //{
+            //    var swaggerPath = "/swagger/ver.1/swagger.json";
+            //    sw.SwaggerEndpoint(swaggerPath, "Movies Api Ver.1");
+            //});
         }
     }
 }

@@ -6,6 +6,6 @@
         public short Rate { get; set; }
         public string Comment { get; set; }
 
-        public Movie Movie { get; set; }
+        public int MovieId { get; set; }
     }
 }

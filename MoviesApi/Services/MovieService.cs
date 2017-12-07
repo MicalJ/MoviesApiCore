@@ -9,11 +9,11 @@ namespace MoviesApi.Services
 {
     public class MovieService : IMovieService
     {
-        public List<Movie> GetAll()
+        public IEnumerable<Movie> GetAll()
         {
              using(MoviesApiDbContext db = new MoviesApiDbContext())
             {
-                return db.Movies.ToList();
+                return db.Movies.ToArray();
             } 
         }
 
@@ -43,7 +43,7 @@ namespace MoviesApi.Services
             }
         }
 
-        public void Delete(int id)
+        public void Remove(int id)
         {
             using (MoviesApiDbContext db = new MoviesApiDbContext())
             {

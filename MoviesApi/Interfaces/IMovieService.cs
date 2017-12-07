@@ -8,7 +8,7 @@ namespace MoviesApi.Interfaces
 {
     public interface IMovieService
     {
-        List<Movie> GetAll();
+        IEnumerable<Movie> GetAll();
 
         Movie GetById(int id);
 
@@ -16,6 +16,6 @@ namespace MoviesApi.Interfaces
 
         void UpdateMovie(Movie movie);
 
-        void Delete(int id);
+        void Remove(int id);
     }
 }

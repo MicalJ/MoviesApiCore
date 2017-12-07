@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETFramework,Version=v4.7.1/win7-x86",
-    "signature": "32cbafc67cf5013a2a2229d047a10cfc25f6cd98"
+    "signature": "56dcf4e219d98c733c590ce3f227b8c4f45f3310"
   },
   "compilationOptions": {
     "defines": [
@@ -23,11 +23,12 @@
     ".NETFramework,Version=v4.7.1": {
       "MoviesApi/1.0.0": {
         "dependencies": {
-          "AutoMapper": "6.2.1",
+          "AutoMapper": "6.2.2",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "3.2.0",
           "EntityFramework": "6.2.0",
           "Microsoft.AspNetCore": "2.0.1",
           "Microsoft.AspNetCore.Mvc": "2.0.1",
+          "Microsoft.AspNetCore.Mvc.Razor.ViewCompilation": "2.0.1",
           "Microsoft.AspNetCore.StaticFiles": "2.0.1",
           "MoviesDb": "1.0.0",
           "Swashbuckle.AspNetCore": "1.1.0",
@@ -147,7 +148,8 @@
           "System.Xml.XmlDocument.Reference": "0.0.0.0",
           "System.Xml.XmlSerializer": "0.0.0.0",
           "System.Xml.XPath.Reference": "0.0.0.0",
-          "System.Xml.XPath.XDocument.Reference": "0.0.0.0"
+          "System.Xml.XPath.XDocument.Reference": "0.0.0.0",
+          "Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x86": "2.0.1.0"
         },
         "compile": {
           "MoviesApi.exe": {}
@@ -738,14 +740,19 @@
           ".NETFramework/v4.7.1/Facades/System.Xml.XPath.XDocument.dll": {}
         }
       },
-      "AutoMapper/6.2.1": {
+      "Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x86/2.0.1.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x86.exe": {}
+        }
+      },
+      "AutoMapper/6.2.2": {
         "compile": {
           "lib/net45/AutoMapper.dll": {}
         }
       },
       "AutoMapper.Extensions.Microsoft.DependencyInjection/3.2.0": {
         "dependencies": {
-          "AutoMapper": "6.2.1",
+          "AutoMapper": "6.2.2",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0",
           "Microsoft.Extensions.DependencyModel": "2.0.3"
         },
@@ -1128,6 +1135,12 @@
         },
         "compile": {
           "lib/net46/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Mvc.Razor.ViewCompilation/2.0.1": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Hosting": "2.0.1",
+          "Microsoft.AspNetCore.Mvc.RazorPages": "2.0.1"
         }
       },
       "Microsoft.AspNetCore.Mvc.RazorPages/2.0.1": {
@@ -1914,11 +1927,12 @@
     ".NETFramework,Version=v4.7.1/win7-x86": {
       "MoviesApi/1.0.0": {
         "dependencies": {
-          "AutoMapper": "6.2.1",
+          "AutoMapper": "6.2.2",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "3.2.0",
           "EntityFramework": "6.2.0",
           "Microsoft.AspNetCore": "2.0.1",
           "Microsoft.AspNetCore.Mvc": "2.0.1",
+          "Microsoft.AspNetCore.Mvc.Razor.ViewCompilation": "2.0.1",
           "Microsoft.AspNetCore.StaticFiles": "2.0.1",
           "MoviesDb": "1.0.0",
           "Swashbuckle.AspNetCore": "1.1.0",
@@ -2038,20 +2052,21 @@
           "System.Xml.XmlDocument.Reference": "0.0.0.0",
           "System.Xml.XmlSerializer": "0.0.0.0",
           "System.Xml.XPath.Reference": "0.0.0.0",
-          "System.Xml.XPath.XDocument.Reference": "0.0.0.0"
+          "System.Xml.XPath.XDocument.Reference": "0.0.0.0",
+          "Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x86": "2.0.1.0"
         },
         "runtime": {
           "MoviesApi.exe": {}
         }
       },
-      "AutoMapper/6.2.1": {
+      "AutoMapper/6.2.2": {
         "runtime": {
           "lib/net45/AutoMapper.dll": {}
         }
       },
       "AutoMapper.Extensions.Microsoft.DependencyInjection/3.2.0": {
         "dependencies": {
-          "AutoMapper": "6.2.1",
+          "AutoMapper": "6.2.2",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0",
           "Microsoft.Extensions.DependencyModel": "2.0.3"
         },
@@ -2437,6 +2452,12 @@
         },
         "runtime": {
           "lib/net46/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Mvc.Razor.ViewCompilation/2.0.1": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Hosting": "2.0.1",
+          "Microsoft.AspNetCore.Mvc.RazorPages": "2.0.1"
         }
       },
       "Microsoft.AspNetCore.Mvc.RazorPages/2.0.1": {
@@ -3254,12 +3275,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "AutoMapper/6.2.1": {
+    "AutoMapper/6.2.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ZD9he/2wsNQbfnZJMc7Ijvz0hf2Lc6R8Tk97k8Q741flowTHd/YPxG8d5P0BVOJAPLVXjjX6IZ8l0u0A2l+K2g==",
-      "path": "automapper/6.2.1",
-      "hashPath": "automapper.6.2.1.nupkg.sha512"
+      "sha512": "sha512-eGKcnJdoF5rYMWPUaSPtlWdvua9xw4hnQN5kM/X4AXLGKghrtPIaMv+RYoA3sj0kyZ3X6wZ1Qj67F+u0pCCPaw==",
+      "path": "automapper/6.2.2",
+      "hashPath": "automapper.6.2.2.nupkg.sha512"
     },
     "AutoMapper.Extensions.Microsoft.DependencyInjection/3.2.0": {
       "type": "package",
@@ -3512,6 +3533,13 @@
       "sha512": "sha512-voxpNz4zq9RxOPnK5oYchyA1ggNVpnz34mFsqwH7G9RUJHFLhjlRaeaKXi8gGwWU3RomGF9ahhH9o8DHgdxmPA==",
       "path": "microsoft.aspnetcore.mvc.razor.extensions/2.0.1",
       "hashPath": "microsoft.aspnetcore.mvc.razor.extensions.2.0.1.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Mvc.Razor.ViewCompilation/2.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qrX7oypFE69MqlYQdFY8f5x2pTM+y0GZa1u/R7qdz/7C4qWqzPAG8Tsuy7CPFych8lbI8+rJx1fBfxrNr22oBA==",
+      "path": "microsoft.aspnetcore.mvc.razor.viewcompilation/2.0.1",
+      "hashPath": "microsoft.aspnetcore.mvc.razor.viewcompilation.2.0.1.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Mvc.RazorPages/2.0.1": {
       "type": "package",
@@ -4904,6 +4932,11 @@
       "sha512": ""
     },
     "System.Xml.XPath.XDocument.Reference/0.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x86/2.0.1.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""

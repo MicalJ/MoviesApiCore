@@ -10,7 +10,7 @@ namespace MoviesDb.DAL
         public string Author { get; set; }
         public int Year { get; set; }
 
-        public Category Category { get; set; }
+        public int CategoryId { get; set; }
         public virtual ICollection<Review> Review { get; set; }
     }
 }

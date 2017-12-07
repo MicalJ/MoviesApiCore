@@ -147,3 +147,4 @@ C:\Repos\MoviesApi\MoviesApi\bin\Debug\net471\MoviesDb.pdb
 C:\Repos\MoviesApi\MoviesApi\bin\Debug\net471\MoviesDb.dll.config
 C:\Repos\MoviesApi\MoviesApi\obj\Debug\net471\MoviesApi.exe
 C:\Repos\MoviesApi\MoviesApi\obj\Debug\net471\MoviesApi.pdb
+C:\Repos\MoviesApi\MoviesApi\bin\Debug\net471\refs\Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x86.exe
