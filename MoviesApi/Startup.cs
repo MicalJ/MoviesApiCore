@@ -8,7 +8,6 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using AutoMapper;
 using System.Reflection;
-using Swashbuckle.AspNetCore.Swagger;
 using System.IO;
 using MoviesDb.DAL;
 using MoviesApi.Interfaces;

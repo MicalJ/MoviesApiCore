@@ -2,19 +2,15 @@
 
 @{
     ViewData["Title"] = "Get";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Get</h2>
-
-<p>
-    <a asp-action="Create">Create New</a>
+<p style="margin-top:20px;">
+    <a asp-action="Create" >Create New</a>
 </p>
 <table class="table">
     <thead>
         <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.Id)
-                </th>
                 <th>
                     @Html.DisplayNameFor(model => model.Title)
                 </th>
@@ -27,18 +23,12 @@
                 <th>
                     @Html.DisplayNameFor(model => model.Year)
                 </th>
-                @*<th>
-                    @Html.DisplayNameFor(model => model.CategoryId)
-                </th>*@
             <th></th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
         <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Id)
-            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Title)
             </td>
@@ -51,9 +41,6 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Year)
             </td>
-            @*<td>
-                @Html.DisplayFor(modelItem => item.CategoryId)
-            </td>*@
             <td>
                 @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
                 @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
